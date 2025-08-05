@@ -8,37 +8,80 @@
 </head>
 <body>
     <!-- Global container -->
-     <div class="flex justify-center items-center min-h-screen bg-slate-200">
+     <div class="flex justify-center items-center min-h-screen bg-slate-100">
         <!-- card -->
-        <div class="flex flex-col md:flex-row bg-white shadow-xl rounded-xl space-y-4 md:space-y-0 md:space-x-2 p-6 m-3 md:p-16 m-0">
+        <div class="flex flex-col md:flex-row bg-white shadow-2xl rounded-2xl space-y-10 md:space-y-0 md:space-x-10 p-6 m-3 md:p-16 m-0">
             <!-- image section  -->
              <div>
-                <img src="" alt="" class="w-60 hover:scale-105 duration-300 mx-3">
+                <img src="assets/Strawberry.jpg" alt="Strawberry images" class="w-60 hover:scale-105 duration-300 mx-auto">
              </div>
-            <!-- Title section -->
-             <div class="flex flex-col space-y-6 text-center">
-                <div class="flex flex-col space-y-4">
-                    Lorem Ipsum Headset
-                </div>
-                <div>
-                    <div class="inline-block text-white bg-black rounded-full px-4 py-2">Add to cart</div>
-                </div>
-                <div class="flex flex-col">
-                    <div class="line-through">
-                        $199.99
+            <!-- content -->
+             <div class="flex flex-col space-y-6">
+                <!-- title and label -->
+                <div class="flex flex-col space-y-3 text-center md:text-left mb-4">
+                
+                    <div>
+                        <div class="inline-block text-white bg-black rounded-full px-3 py-1 text-sm">Free shipping</div>
                     </div>
-                    <div class="text-5xl font-medium mt-2">$149.99</div>
-                </div>
-                <div class="group">
-                    <button class="bg-blue-700 w-full rounded-lg border border-b-8 border-b-blue-700 group:hover:border-b-7 group:hover:border-b-blue-700 group:hover:border-b-0">
-                        <div class="bg-blue-600 text-xs px-2 py-2 hover:bg-blue-700 text-white ">Buy Now</div>
-                    </button>
-                </div>
-                <div class="flex flex-row space-x-2">
-                    <div class="rounded-full bg-green-200 hover:animate-ping"></div>
-                    <div class="text-sm font-light">50 plus in stock</div>
-                </div>
 
+                    <!-- title -->
+                    <div class="max-w-sm text-2xl font-medium">
+                        Premium Organic Strawberries 1kg
+                    </div>
+
+                    <!-- price container -->
+                    <div class="flex flex-col mb-4 space-y-3 text-center md:text-left">
+                        <div class="line-through">
+                            $199.99
+                        </div>
+                        <div class="text-5xl font-medium mt-2">$149.99</div>
+                        <div class="text-sm font-light text-gray-400">Offer valid for 5 days</div>
+                    </div>
+
+                    <!-- button group -->
+                    <div class="group">
+                        <button class="bg-blue-700 w-full 
+                        text-white 
+                        rounded-lg border-b-8 border-b-blue-700 
+                        group-hover:border-t-8 
+                        group-hover:border-b-0 transition-all duration-150
+                        group-hover:bg-blue-700 group-hover:border-t-blue-700
+                        transition-all group-hover:shadow-lg
+                        ">
+                            <div class="bg-blue-500 px-8 py-4 duration-150 bg-blue-500 rounded-lg group-hover:bg-blue-700">Buy Now</div>
+                        </button>
+                    </div>
+
+                    <!-- stock -->
+                    <div class="flex items-center space-x-3 group">
+                        <div class="h-3 w-3 rounded-full bg-green-400 group-hover:animate-ping "></div>
+                        <div class="text-sm">in stock</div>
+                    </div>
+
+                    <!-- button-->
+                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                        <button class="
+                           flex items-center justify-center px-5 py-3
+                           space-x-3  
+                           rounded-lg 
+                           shadow-sm hover:shadow-lg 
+                           border-2
+                           border-gray-300
+                           hover:bg-opacity-30 hover:-translate-y-0.5 transition-all duration-150
+                           
+                        ">
+                            <img src="assets/weight.png" alt="add to cart icon" class="w-8">
+                            <div class="text-lg">Add to Cart</div>
+                        </button>
+                        <button class="flex 
+                        items-center justify-center px-5 py-3 
+                        rounded-lg shadow-sm hover:shadow-lg 
+                        border-2 space-x-3 border-gray-300 hover:bg-opactiy-300 hover:-translate-y-0.5 transition-all duration-150">
+                        <img src="assets/heart.png" alt="add to wish list icon" class="w-8">  
+                        <div class="text-lg">Add to wishlist</div>
+                        </button>
+                    </div>
+                </div>
              </div>
         </div>
      </div>
